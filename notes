@@ -1,0 +1,104 @@
+Device:	Oneplus 5	|	CPU artitecture: ARM-64
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>> Root the phone <<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+i) Download Twrp
+
+ii) Download platfrom-tools for Linux:
+sudo apt install android-tools-adb
+or
+sudo apt install abd (optional)
+
+For Windows, download & extract "platform-tools" for Windows.
+https://dl.google.com/android/repository/platform-tools-latest-windows.zip
+Go instde that folder, and hold SHIFT key and open powershell or Termainl.
+
+iii) Download Magisk-Manager Apk, Installer zip & Uninstaller Zip.
+To download uninstaller: https://github.com/topjohnwu/Magisk
+
+iv) In phone remove Pin/Password/Pattern & Enable:
+USB Debugging, OEM unlock, Advance Reboot, etc
+
+Attach the phone to laptop and type:
+(Adb = Android Debug Bridge)
+
+adb devices						//should show mobile connected & working
+adb reboot bootloader			//should take u to fastbootmode
+fastboot devices				//should show mobile
+fastboot oem devices-info		//shows "True" or "False". 
+								//True = Oem unlocked = Flashable.
+								//False = OEM Locked = Don't flash
+
+fastboot oem unlock				// Will unlock the bootloader.
+fastboot reboot					//Now the system gets reset.	
+								//After Reboot, Enable USB debugging, OEM unlock.
+
+Flash:
+
+fastboot flash recovery xxxxx.img		//Old command
+fastboot boot xxxxx.img					//New command
+
+Note: fastboot command might not work on some phone. Depending upon who manufactured it.
+For example, Mi phones needs "Mi Unlock Tool" for verification before we flash a new recovery.
+
+After installing Twrp recovery, do this:
+1. Install Magisk zip.							//Download the zip from offical github repo
+2. Wipe Cache & Dalvik. 
+3. Reboot the device.
+
+Now you have succesfully rooted your phone.
+
+>>>>>>>>>>>>>>>>>>>	Flash a new OS	<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+i) Backup using Twrp
+ii) Download OS (Custom or Stock)
+iii) Check the hash for OS for file corruption:
+md5 <file-name.zip> 
+
+The MD5 message-digest algorithm is a widely used hash function producing a 128-bit hash value.
+It used as a checksum to verify data integrity, but only against unintentional corruption.
+ 
+iv) Clear Dalvik/ART Cache, Cache, System, Vendor, Data using Twrp's Wipe option.
+(Dalvik is the java based Virtual Machine that runs Android Apps on Android. Dalvik-cache is the cache area for Dalvik VM, it is created when the Dalvik VM optimizes your app for running.)
+
+v) Selete new OS and flash.
+vi) Clear Dalvik/ART Cache, Cache.
+
+
+>>>>>>>>>>>>>>>>>>>>> Forget the password/pin of the phone	<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+Using the TWRP, navigate to /data/sytsem/ and delete the following files:
+
+locksettings.db
+locksettings.db-shm
+locksettings.db-wal.
+gatekeeper.password.key
+gatekeeper.pattern.key
+
+>>>>>>>>>>>>>	Optional: Flash this only if ur phone gets decryted	<<<<<<<<<<<<<<<<
+
+no-verity-opt-encrypt.zip
+______________________________________________________
+
+Q.	How to solve bootloop created by Magisk modules?
+Ans: Reinstall that module of from Twrp in order to uninstall that module.
+__________________________________________________________________________
+>>>>>>>>>>>> Extra Stuff which might come handy	<<<<<<<<<<<<<<<<<<<<<
+
+Reddit
+xda-developers
+selinux & selinux app			
+F-droid
+xda-lads						//a playstore from xda-developers
+Lucky Patcher
+magisk module
+busybox
+init.d
+Turmux
+Lineage OS
+Matlog
+Custom rom Vs Stock rom
+
+=====================================================
+PS: Don't waste too much time on Phone customization.
+=====================================================
