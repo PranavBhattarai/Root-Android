@@ -26,17 +26,17 @@ adb devices				//should show mobile connected & working
 adb reboot bootloader			//should take u to fastbootmode
 fastboot devices			//should show mobile
 fastboot oem devices-info		//shows "True" or "False". 
-								//True = Oem unlocked = Flashable.
-								//False = OEM Locked = Don't flash
+						//True = Oem unlocked = Flashable.
+						//False = OEM Locked = Don't flash
 
-fastboot oem unlock				// Will unlock the bootloader.
-fastboot reboot					//Now the system gets reset.	
-								//After Reboot, Enable USB debugging, OEM unlock.
+fastboot oem unlock			//Will unlock the bootloader.
+fastboot reboot				//Now the system gets reset.	
+						//After Reboot, Enable USB debugging, OEM unlock.
 
 Flash:
 
-fastboot flash recovery xxxxx.img		//Old command
-fastboot boot xxxxx.img					//New command
+fastboot flash recovery xxxxx.img	//Old command
+fastboot boot xxxxx.img			//New command
 
 Note: fastboot command might not work on some phone. Depending upon who manufactured it.
 For example, Mi phones needs "Mi Unlock Tool" for verification before we flash a new recovery.
