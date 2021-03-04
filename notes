@@ -22,9 +22,9 @@ USB Debugging, OEM unlock, Advance Reboot, etc
 Attach the phone to laptop and type:
 (Adb = Android Debug Bridge)
 
-adb devices						//should show mobile connected & working
+adb devices				//should show mobile connected & working
 adb reboot bootloader			//should take u to fastbootmode
-fastboot devices				//should show mobile
+fastboot devices			//should show mobile
 fastboot oem devices-info		//shows "True" or "False". 
 								//True = Oem unlocked = Flashable.
 								//False = OEM Locked = Don't flash
