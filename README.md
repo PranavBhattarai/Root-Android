@@ -8,7 +8,7 @@ Some important sites which are important for ROM Flashers:
 2. xda-developers.com
 
 
-## Awesome commands with works on rooted device
+## Awesome commands which works on rooted device
 
 pm uninstall -k --user 0 <package name>		//Will uninstall any app
 
