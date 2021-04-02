@@ -12,7 +12,7 @@ Some important sites which are important for ROM Flashers:
 <pre>
 pm uninstall -k --user 0 <package name>		//Will uninstall any app
 
-getenforce					//To know Selinux policy
+getenforce		//To know Selinux policy
 
-pm hide <package name>				//To hide app from launcher
+pm hide <package name>		//To hide app from launcher
 </pre>
