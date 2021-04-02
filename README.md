@@ -9,9 +9,10 @@ Some important sites which are important for ROM Flashers:
 
 
 ## Awesome commands which works on rooted device
-
+<pre>
 pm uninstall -k --user 0 <package name>		//Will uninstall any app
 
 getenforce					//To know Selinux policy
 
 pm hide <package name>				//To hide app from launcher
+</pre>
