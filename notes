@@ -31,18 +31,16 @@ fastboot oem devices-info		//shows "True" or "False".
 
 fastboot oem unlock			//Will unlock the bootloader.
 fastboot reboot				//Now the system gets reset.	
-						//After Reboot, Enable USB debugging, OEM unlock.
+					//After Reboot, Enable USB debugging, OEM unlock.
 
 Flash:
 
-fastboot flash recovery xxxxx.img	//Old command
-fastboot boot xxxxx.img			//New command
+fastboot flash recovery xxxxx.img		//Old command
+fastboot boot xxxx.img				//New command
 
-Note: fastboot command might not work on some phone. Depending upon who manufactured it.
-For example, Mi phones needs "Mi Unlock Tool" for verification before we flash a new recovery.
 
 After installing Twrp recovery, do this:
-1. Install Magisk zip.							//Download the zip from offical github repo
+1. Flash Magisk zip from twrp.					//Download the zip from offical github repo
 2. Wipe Cache & Dalvik. 
 3. Reboot the device.
 
