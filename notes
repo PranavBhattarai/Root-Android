@@ -13,7 +13,7 @@ For Windows, download & extract "platform-tools" for Windows.
 https://dl.google.com/android/repository/platform-tools-latest-windows.zip
 Go instde that folder, and hold SHIFT key and open powershell or Termainl.
 
-iii) Download Magisk-Manager Apk, Installer zip & Uninstaller Zip.
+iii) Download Magisk installer zip & uninstaller zip from the link below:
 To download uninstaller: https://github.com/topjohnwu/Magisk
 
 iv) In phone remove Pin/Password/Pattern & Enable:
@@ -50,11 +50,8 @@ Now you have succesfully rooted your phone.
 
 i) Backup using Twrp
 ii) Download OS (Custom or Stock)
-iii) Check the hash for OS for file corruption:
-md5 <file-name.zip> 
+iii) Check the hash for OS for file corruption using this command:	md5 <file-name.zip> 
 
-The MD5 message-digest algorithm is a widely used hash function producing a 128-bit hash value.
-It used as a checksum to verify data integrity, but only against unintentional corruption.
  
 iv) Clear Dalvik/ART Cache, Cache, System, Vendor, Data using Twrp's Wipe option.
 (Dalvik is the java based Virtual Machine that runs Android Apps on Android. Dalvik-cache is the cache area for Dalvik VM, it is created when the Dalvik VM optimizes your app for running.)
@@ -83,18 +80,16 @@ Ans: Reinstall that module of from Twrp in order to uninstall that module.
 __________________________________________________________________________
 >>>>>>>>>>>> Extra Stuff which might come handy	<<<<<<<<<<<<<<<<<<<<<
 
-Reddit
-xda-developers
-selinux & selinux app			
-F-droid
-xda-lads						//a playstore from xda-developers
-Lucky Patcher
-magisk module
-busybox
-init.d
-Turmux
-Lineage OS
-Matlog
+Reddit communities					//for asking help
+xda-developers						//for basically everything
+selinux & selinux app					//for security
+F-droid							//for opensource apps
+xda-lads						//for cool app
+Lucky Patcher						//for bypassing Android payment system [Illegal]
+magisk module						//for modifying phone capabilities
+Turmux							//for terminal
+Lineage OS						//for custom rom
+Matlog							//for logs
 Custom rom Vs Stock rom
 
 =====================================================
