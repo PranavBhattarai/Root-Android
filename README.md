@@ -18,6 +18,7 @@ pm hide <package name>				//To hide app from launcher
 ```
 
 ### Reflash ROM original kernel
-
+```
 - Extract boot.imp from ROM zip
 - Flash it on boot partition.
+```
