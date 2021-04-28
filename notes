@@ -65,8 +65,8 @@ vi) Clear Dalvik/ART Cache, Cache.
 Using the TWRP, navigate to /data/sytsem/ and delete the following files:
 
 locksettings.db
-locksettings.db-shm
-locksettings.db-wal.
+device_policies.xml
+locksettings.db-shm			//optional
 gatekeeper.password.key
 gatekeeper.pattern.key
 
