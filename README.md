@@ -1,6 +1,6 @@
 # Root-Android
 
-How to root android phones? This repo is all about how do I do it.
+How to root android phones? This repo is all about how do I do it on my phone _(Oneplus 5)_.
 
 Some important sites which are important for ROM Flashers:
 
