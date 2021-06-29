@@ -25,7 +25,7 @@ Attach the phone to laptop and type:
 adb devices				//should show mobile connected & working
 adb reboot bootloader			//should take u to fastbootmode
 fastboot devices			//should show mobile
-fastboot oem devices-info		//shows "True" or "False". 
+fastboot oem device-info		//shows "True" or "False". 
 						//True = Oem unlocked = Flashable.
 						//False = OEM Locked = Don't flash
 
