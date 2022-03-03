@@ -1,0 +1,34 @@
+1. Magisk no longer show "modules" to install, hence:
+
+https://github.com/Fox2Code/FoxMagiskModuleManager/releases	//For installing modules.
+
+
+2. Maintain device certificate [aka pass Basic attestiation]
+
+https://github.com/kdrag0n/safetynet-fix/releases               //You can also install this from FMMM.
+
+
+3. Remove ads from DNS level:
+
+Go to network settings and apply the one which is fast for you:
+
+dns.adguard.com
+us.adhole.org
+dns.nextdns.io
+
+
+4. Setup fish and starship prompt for termux:
+
+pkg install fish starship
+mkdir .config
+cd config
+touch config.fish
+nano config.fish		//and write the line below:
+starship init fish | source
+
+set -U fish_greeting ""		//to remove fish welcome message
+
+
+5. Know phone & sim support status, along with other information:
+
+*#*#4636#*#*
