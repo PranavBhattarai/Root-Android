@@ -4,8 +4,8 @@ How to root android phones? This repo is all about how do I do it on my phone _(
 
 Some important sites which are important for ROM Flashers:
 
-1. Twrp.me
-2. xda-developers.com
+1. [Twrp.me](https://twrp.me/)
+2. [XDA Developer Community](https://forum.xda-developers.com/)
 
 
 ## Awesome commands which works on rooted device
