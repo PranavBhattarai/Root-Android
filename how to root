@@ -4,6 +4,10 @@ Device:	Oneplus 5	|	CPU artitecture: ARM-64
 
 i) Download Twrp
 
+twrp.me/devices/
+
+[Warning: If you didn't find Twrp for your model, DO NOT proceed further. Leave.]
+
 ii) Download platfrom-tools for Linux:
 sudo apt install android-tools-adb
 or
@@ -95,4 +99,3 @@ Custom rom Vs Stock rom
 =====================================================
 PS: Don't waste too much time on Phone customization.
 =====================================================
-
