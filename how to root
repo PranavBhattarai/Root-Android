@@ -17,6 +17,9 @@ For Windows, download & extract "platform-tools" for Windows.
 https://dl.google.com/android/repository/platform-tools-latest-windows.zip
 Go instde that folder, and hold SHIFT key and open powershell or Termainl.
 
+[Optional]
+sudo dnf install adb-enhanced	//A swiss-knife to do lot of things. Check its repo
+
 iii) Download Magisk installer zip & uninstaller zip from the link below:
 To download uninstaller: https://github.com/topjohnwu/Magisk
 
